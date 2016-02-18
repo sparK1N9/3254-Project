@@ -13,7 +13,7 @@ def func():
         else:
             if username not in users: return 'user name not found.'
             if password != users[username]: return 'password not correct.'
-        return render_template("main.html");
+        return render_template("main.html",username = request.form["username"]);
     return render_template("log in.html");
 
 app.run("127.0.0.1", 13000, debug=True)
