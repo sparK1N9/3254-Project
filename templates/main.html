@@ -1,23 +1,49 @@
-<!doctype html>
+﻿<!doctype html>
 <html>
 <head>
     <title>HypeLinQ - linking you to your world!</title>
     <meta charset="UTF-8">
+    <style>
+        h1 {
+            color: red;
+            font-size: 77px;
+        }
+
+        body {
+            background-color: pink;
+        }
+    </style>
 </head>
 
 <body>
     <h1><font face="calibri">HypeLinQ </font></h1>
-    <div id="right">
+    <div id="newPost">
         <form method="post">
-            <input type="text" placeholder="Want to say something?" name="post">
+            <input type="text" placeholder="want to say something?" name="post" size="100">
             <input type="submit" value="post!">
         </form>
     </div>
-    <div id="left">
+    <div id="search">
+        <form method="post">
+            <input type="text" placeholder="looking for someone?" name="post">
+            <input type="submit" value="search!">
+        </form>
+    </div>
+    <div id="following">
         <p>You are following:</p>
     </div>
-    <div id="lowerright">
+    <div id="posts">
         <p>What others are posting:</p>
+    </div>
+    <div id="logout">
+        <form method="post">
+            <input type="submit" value="log out">
+        </form>
+    </div>
+    <div id="cancelAccount">
+        <form method="post">
+            <input type="submit" value="cancel account">
+        </form>
     </div>
 </body>
 
