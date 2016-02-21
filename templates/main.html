@@ -17,7 +17,10 @@
 
 <body>
     <h1><font face="calibri">HypeLinQ </font></h1>
-    <h2>Hello, {{username}}</h2>
+
+    {% if loggedIn == 1 %}
+
+    <h2>Hello, {{user}}</h2>
     <div id="newPost">
         <form method="post">
             <input type="text" placeholder="want to say something?" name="post" size="100">
@@ -37,15 +40,18 @@
         <p>What others are posting:</p>
     </div>
     <div id="logout">
-        <form method="post">
-            <input type="submit" value="log out">
-        </form>
+        <a href="http://127.0.0.1:13000/logout/">log out</a>
     </div>
     <div id="cancelAccount">
         <form method="post">
-            <input type="submit" value="cancel account">
+            <input type="text" placeholder="type in your username to delete your account" name="user">
+            <input type="submit" value="delete account!">
         </form>
     </div>
+
+    {% else %}
+    <p>Log in first!</p>
+    {% endif %}
 </body>
 
 </html>
