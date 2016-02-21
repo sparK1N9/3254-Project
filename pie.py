@@ -27,9 +27,10 @@ def logOut():
 def main(username):
     if 'username' not in session: return 'log in first!'
     if request.method=='POST':
-        if request.form["log out"]:
+        if "log out" in request.form:
             return redirect(url_for('logOut', username = username))
-        if request.form["del acc"]:
+        elif "del acc" in request.form:
+            session.pop('username', None)
             del users[username]
             return 'Account deleted.'
     return render_template("main.html",user = username);
