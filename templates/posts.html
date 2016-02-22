@@ -1,0 +1,14 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>HypeLinQ - linking you to your world!</title>
+</head>
+<body>
+    <p>The posts:</p>
+    {% for item in seq %}
+    <ul>{% block loop_item scoped %}{{ item }}{% endblock %}</ul>
+    {% endfor %}
+</body>
+</html>

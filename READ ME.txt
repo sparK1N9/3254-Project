@@ -1,0 +1,9 @@
+Welcome to HypeLinq, the web app that allows you to post messages on the internet.
+
+To start, sign up for an account with your username and password.
+
+In your main page, you will have the option to post messages, follow other users by typing in their usernames, unfollow other users using the same method, and see the messages that you and the users you are following have been posted. Note that we do not tell you who posted what, so it is more fun!
+
+Of course, if you have had enough internet for a day, you can log out. And if you do not like our services, which you never will, you have the option to delete your account as well.
+
+HF!

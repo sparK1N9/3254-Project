@@ -8,10 +8,6 @@
             color: red;
             font-size: 77px;
         }
-
-        body {
-            background-color: pink;
-        }
     </style>
 </head>
 
@@ -20,27 +16,32 @@
     <h2>Hello, {{user}}</h2>
     <div id="newPost">
         <form method="post">
-            <input type="text" placeholder="want to say something?" name="post" size="100">
-            <input type="submit" value="post!">
+            <input type="text" placeholder="want to say something?" name="msg" size="100">
+            <input type="submit" name="p" value="post!">
         </form>
     </div>
-    <div id="search">
+    <div id="follow">
         <form method="post">
-            <input type="text" placeholder="looking for someone?" name="post">
-            <input type="submit" value="search!">
+            <input type="text" placeholder="want to follow someone?" name="target" size="50">
+            <input type="submit" name="search" value="follow!">
         </form>
-    </div>
-    <div id="following">
-        <p>You are following:</p>
     </div>
     <div id="posts">
-        <p>What others are posting:</p>
+        <form method="post">
+            <input type="submit" name="posts" value="See the posts!">
+        </form>
+    </div>
+    <div id="unfollow">
+        <form method="post">
+            <input type="text" placeholder="want to unfollow someone?" name="person" size="50">
+            <input type="submit" name="unfollow" value="unfollow!">
+        </form>
     </div>
     <div id="logout">
         <form method="post">
             <input type="submit" name="log out" value="log out">
         </form>
-</div>
+    </div>
     <div id="cancelAccount">
         <form method="post">
             <input type="submit" name="del acc" value="delete account">
